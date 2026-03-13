@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="giaodien.css">
+    <title>Web bán đồ ăn</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="logo.png" alt="Bakery Logo">
+            </a>
+            <div id="menu">
+                <div class="item"><li><a href="giaodien.html">TRANG CHỦ</a></li></div>
+                <div class="item"><li><a href="ngot.html">BÁNH NGỌT</a></li></div>
+                <div class="item"><li><a href="sn.html">BÁNH SINH NHẬT</a></li></div>
+            </div>
+            <div id="actions">
+                <div class="item" id="user-icon">
+                    <img src="user.png" alt="User">
+                </div>
+                <div class="item">
+                    <img src="cart.png" alt="" id="cart-icon">
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <span>Tiệm bánh ngọt</span>
+                    <br>
+                    <span>Ăn siu ngon</span>
+                </h2>
+                <p>Nơi đây bán mọi loại bánh</p>
+                <button id="buy-now">Mua ngay</button>
+            </div>
+            <div class="box-right">
+                <img src="bánh1.png" width="40%" height="50%">
+                <img src="bánh2.png" width="40%" height="50%">
+                <img src="bánh3.png" width="40%" height="50%">
+            </div>
+            <div class="to-bottom">
+                <a href=""><img src="bottom.png" alt=""></a>
+            </div>
+        </div>
+        <div id="wp-products">
+            <h2>SẢN PHẨM</h2>
+            <ul id="list-products">
+                <li class="item">
+                    <img src="banh.png" alt="">
+                    <div class="stars"><span></span></div>
+                    <div class="name">bánh cherry</div>
+                    <div class="price">50.000 VNĐ</div>
+                </li>
+                <li class="item">
+                    <img src="quất.png" alt="">
+                    <div class="stars"><span></span></div>
+                    <div class="name">Bánh việt quất</div>
+                    <div class="price">50.000 VNĐ</div>
+                </li>
+                <li class="item">
+                    <img src="sừng.png" alt="">
+                    <div class="stars"><span></span></div>
+                    <div class="name">Bánh sừng bò</div>
+                    <div class="price">50.000 VNĐ</div>
+                </li>
+                <li class="item">
+                    <img src="matcha.png" alt="">
+                    <div class="stars"><span></span></div>
+                    <div class="name">Bánh matcha</div>
+                    <div class="price">50.000 VNĐ</div>
+                </li>
+                <li class="item">
+                    <img src="socola.png" alt="">
+                    <div class="stars"><span></span></div>
+                    <div class="name">Bánh socola</div>
+                    <div class="price">50.000 VNĐ</div>
+                </li>
+                <li class="item">
+                    <img src="4loai.png" alt="">
+                    <div class="stars"><span></span></div>
+                    <div class="name">Combo bánh 4 vị</div>
+                    <div class="price">50.000 VNĐ</div>
+                </li>
+            </ul>
+            <div class="list-page">
+                <div class="item"><li><a href="giaodien.html">1</a></li></div>
+                <div class="item"><li><a href="2.html">2</a></li></div>
+            </div>
+        </div>
+        <div id="saleoff">
+            <h1>
+                <span>Tưng bừng khai trương đồng giá</span>
+                <span>50k</span>
+            </h1>
+        </div>
+        <div id="comment">
+            <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
+            <div id="comment-body"></div>
+        </div>
+
+        <!-- Popup đặt món -->
+        <div id="order-popup" class="popup">
+            <div class="popup-content">
+                <span class="close">×</span>
+                <h3>Đặt món</h3>
+                <label for="dish">Món:</label>
+                <input type="text" id="dish" name="dish" placeholder="Chọn món">
+                <label for="quantity">Số lượng:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button id="add-to-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+        <!-- Popup giỏ hàng -->
+        <div id="cart-popup" class="popup">
+            <div class="popup-content">
+                <span class="close">×</span>
+                <h3>Giỏ Hàng Của Bạn</h3>
+                <ul id="cart-items"></ul>
+                <p>Tổng: <span id="total">0 VNĐ</span></p>
+            </div>
+        </div>
+
+        <!-- Popup đăng nhập -->
+        <div id="login-popup" class="popup">
+            <div class="popup-content">
+                <span class="close">×</span>
+                <h3>Đăng nhập</h3>
+                <label for="username">Tên:</label>
+                <input type="text" id="username" name="username" placeholder="Tên">
+                <label for="phone">Số điện thoại:</label>
+                <input type="text" id="phone" name="phone" placeholder="Số điện thoại">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" name="address" placeholder="Địa chỉ">
+                <button id="login-submit">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
+    <script src="giaodien.js"></script>
+</body>
+</html>
